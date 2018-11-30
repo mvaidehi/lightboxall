@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+  <meta charset="utf-8">
+  <title>Lightbox</title>
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" href="css/lightbox.css">
+
+
+</head>
+<body>
+
+  <section role="main">
+ <div class="controls">
+            <button type="button" class="control" data-filter="all">All</button>
+            <button type="button" class="control" data-toggle=".green">Bridal</button>
+            <button type="button" class="control" data-toggle=".blue">Simple</button>
+            <button type="button" class="control" data-toggle=".pink">Traditional</button>
+  </div>
+
+    <hr />
+
+    <h1>Lightbox</h1>
+    <div class="gallery container">
+      
+      <a class="mix green" href="images/IMG_2834.JPG" data-lightbox="example-set" data-title="Design 1"><img class="example-image" src="images/thumb/IMG_2834.JPG" alt="Design 1"/></a>
+
+      <a class="mix blue" href="images/IMG_2876.JPG" data-lightbox="example-set" data-title="Design 2"><img class="example-image" src="images/thumb/IMG_2876.jpg" alt="Design 2" /></a>
+
+      <a class="mix blue" href="images/IMG_2889.JPG" data-lightbox="example-set" data-title="Design 3"><img class="example-image" src="images/thumb/IMG_2889.jpg" alt="Design 3" /></a>
+
+      <a class="mix pink" href="images/IMG_2894.jpg" data-lightbox="example-set" data-title="Design 4"><img class="example-image" src="images/thumb/IMG_2894.jpg" alt="Design 4" /></a>
+
+      <a class="mix green" href="images/IMG_2899.JPG" data-lightbox="example-set" data-title="Design 5"><img class="example-image" src="images/thumb/IMG_2899.jpg" alt="Design 5"/></a>
+
+      <a class="mix green" href="images/IMG_2914.jpg" data-lightbox="example-set" data-title="Design 6"><img class="example-image" src="images/thumb/IMG_2914.jpg" alt="Design 6" /></a>
+
+      <a class="mix pink" href="images/IMG_2920.JPG" data-lightbox="example-set" data-title="Design 7"><img class="example-image" src="images/thumb/IMG_2920.jpg" alt="Design 7" /></a>
+
+      <a class="mix pink" href="images/IMG_2932.jpg" data-lightbox="example-set" data-title="Design 8"><img class="example-image" src="images/thumb/IMG_2932.jpg" alt="Design 8" /></a>
+
+      <a class="mix pink" href="images/SBday1-7226.jpg" data-lightbox="example-set" data-title="Design 9"><img class="example-image" src="images/thumb/SBday1-7226.jpg" alt="Design 9" /></a>
+
+    </div>
+  </section>
+
+
+  <script src="js/lightbox-plus-jquery.min.js"></script>
+  <script src="js/mixitup.min.js"></script>
+
+  <script>
+      var containerEl = document.querySelector('.container');
+
+      var mixer = mixitup(containerEl);
+  </script>
+
+</body>
+</html>
